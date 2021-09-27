@@ -1,7 +1,7 @@
 import React from "react";
 
 const RandomPage = (props) => {
-  return <></>;
+  return <>Random Pages</>;
 };
 
 export default RandomPage;

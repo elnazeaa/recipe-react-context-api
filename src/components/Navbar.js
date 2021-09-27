@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import navLogo from "../images/navLogo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [navToggle, setNavToggle] = useState(false);
@@ -31,13 +32,13 @@ const Navbar = (props) => {
         >
           <ul className="links" ref={divHeight}>
             <li>
-              <a href="/">home</a>
+              <Link to="/">home</Link>
             </li>
             <li>
-              <a href="/about">categories</a>
+              <Link to="/categories">categories</Link>
             </li>
             <li>
-              <a href="/projects">random</a>
+              <Link to="/random">random</Link>
             </li>
           </ul>
         </div>
