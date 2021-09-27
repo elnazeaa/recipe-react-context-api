@@ -97,10 +97,8 @@ const Wrapper = styled.nav`
     height: 0;
     overflow: hidden;
     transition: all 0.3s linear;
-    background-color: #e2e2e2;
     text-align: center;
     color: #565656;
-    box-shadow: 5px 5px 4px -5px #565656;
   }
 
   .show-container {
