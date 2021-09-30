@@ -1,8 +1,13 @@
 import React from "react";
-import { Navbar } from "../components/index";
+import { SearchForm, MealsItems } from "../components/index";
 
 const HomePage = (props) => {
-  return <>Home Page</>;
+  return (
+    <>
+      <SearchForm />
+      <MealsItems />
+    </>
+  );
 };
 
 export default HomePage;

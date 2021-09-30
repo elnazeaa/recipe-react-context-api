@@ -11,10 +11,8 @@ const Navbar = (props) => {
 
   const handleCLick = () => {
     setNavToggle(!navToggle);
-    console.log(navToggle);
     const heightFDiv = divHeight.current.getBoundingClientRect().height;
     setNavHeight(heightFDiv);
-    console.log(heightFDiv);
   };
 
   return (
@@ -48,8 +46,7 @@ const Navbar = (props) => {
 };
 
 const Wrapper = styled.nav`
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  background: #cccbd1 !important;
 
   .nav-header {
     display: flex;
@@ -60,7 +57,7 @@ const Wrapper = styled.nav`
 
   .nav-toggle {
     font-size: 1.5rem;
-    color: var(--clr-primary-5);
+    color: #565656;
     background: transparent;
     border-color: transparent;
     transition: all 0.3s linear;
@@ -71,7 +68,6 @@ const Wrapper = styled.nav`
 
   .nav-toggle:hover {
     color: #565656;
-    transform: rotate(90deg);
   }
 
   .logo {
@@ -79,7 +75,7 @@ const Wrapper = styled.nav`
   }
 
   .links a {
-    color: var(--clr-grey-3);
+    color: #565656;
     font-size: 1rem;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -89,7 +85,7 @@ const Wrapper = styled.nav`
   }
 
   .links a:hover {
-    background: var(--clr-primary-8);
+    background: #e65500;
     color: #e65500;
     padding-left: 1.5rem;
   }
@@ -107,21 +103,11 @@ const Wrapper = styled.nav`
   }
 
   @media screen and (min-width: 800px) {
-    ${
-      "" /* .nav-center {
-      max-width: 1170px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem;
-    } */
-    }
     .nav-center {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: #c5c5c5;
+      ${"" /* background: #c5c5c5; */}
       padding: 1rem;
       box-shadow: 21px 0px 6px #a7a7a7;
       margin: 0 auto;
