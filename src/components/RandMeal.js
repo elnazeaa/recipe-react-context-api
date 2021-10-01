@@ -18,11 +18,6 @@ const RandMeal = (props) => {
     fetchRandMeal();
   }, []);
 
-  console.log(randMeal);
-
-  //   const { strArea, strCategory, strMeal, strMealThumb, strInstructions } =
-  //     randMeal.meals[0];
-
   //   Extract measures with all undefined and inCorrect values
   let measures = [];
   for (let i = 0; i <= 20; i++) {
