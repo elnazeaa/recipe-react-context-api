@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { ContextDetailId } from "../context/ContextDetailId";
 
 const Meal = ({ meal }) => {
-  console.log(meal);
+  // const { handleClickId } = useContext(ContextDetailId);
+
   return (
     <Wrapper className="container">
       <div className="imgCont">
@@ -11,7 +14,9 @@ const Meal = ({ meal }) => {
       <div className="content">
         <p className="title">{meal.strMeal}</p>
         <p className="recepi">{meal.strInstructions.slice(0, 200)} ...</p>
-        <button className="detail">Details</button>
+        <Link className="detail" to={`/detail/${meal.idMeal}`}>
+          Detail
+        </Link>
       </div>
     </Wrapper>
   );
@@ -53,7 +58,7 @@ const Wrapper = styled.div`
     margin-bottom: 5px;
   }
 
-  .content button {
+  .detail {
     width: 6rem;
     padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     font-size: 1rem;
@@ -62,6 +67,10 @@ const Wrapper = styled.div`
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    text-align: center;
+  }
+  .detail:focus {
+    color: #565656;
   }
 `;
 

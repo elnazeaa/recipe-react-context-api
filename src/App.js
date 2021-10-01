@@ -1,7 +1,12 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/index";
-import { HomePage, Categories, RandomPage } from "./pages/index";
+import {
+  HomePage,
+  Categories,
+  RandomPage,
+  MealDetailPage,
+} from "./pages/index";
 import "./App.css";
 
 const App = (props) => {
@@ -17,6 +22,9 @@ const App = (props) => {
         </Route>
         <Route exact path="/random">
           <RandomPage />
+        </Route>
+        <Route exact path={`/detail/:id`}>
+          <MealDetailPage />
         </Route>
       </Switch>
     </BrowserRouter>
