@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import navLogo from "../images/navLogo.png";
 import { Link } from "react-router-dom";
+import { ContexRandomMeal } from "../context/ContextRandomMeal";
 
 const Navbar = (props) => {
   const [navToggle, setNavToggle] = useState(false);

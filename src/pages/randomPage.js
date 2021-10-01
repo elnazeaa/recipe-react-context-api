@@ -1,7 +1,12 @@
 import React from "react";
+import RandMeal from "../components/RandMeal";
 
 const RandomPage = (props) => {
-  return <>Random Pages</>;
+  return (
+    <>
+      <RandMeal />
+    </>
+  );
 };
 
 export default RandomPage;
