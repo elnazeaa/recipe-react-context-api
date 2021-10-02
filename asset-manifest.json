@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/recipe-react-context-api/static/css/main.2dd333ae.chunk.css",
+    "main.js": "/recipe-react-context-api/static/js/main.2f6e61e1.chunk.js",
+    "main.js.map": "/recipe-react-context-api/static/js/main.2f6e61e1.chunk.js.map",
+    "runtime-main.js": "/recipe-react-context-api/static/js/runtime-main.a352fe38.js",
+    "runtime-main.js.map": "/recipe-react-context-api/static/js/runtime-main.a352fe38.js.map",
+    "static/js/2.73af2e37.chunk.js": "/recipe-react-context-api/static/js/2.73af2e37.chunk.js",
+    "static/js/2.73af2e37.chunk.js.map": "/recipe-react-context-api/static/js/2.73af2e37.chunk.js.map",
+    "index.html": "/recipe-react-context-api/index.html",
+    "static/css/main.2dd333ae.chunk.css.map": "/recipe-react-context-api/static/css/main.2dd333ae.chunk.css.map",
+    "static/js/2.73af2e37.chunk.js.LICENSE.txt": "/recipe-react-context-api/static/js/2.73af2e37.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a352fe38.js",
+    "static/js/2.73af2e37.chunk.js",
+    "static/css/main.2dd333ae.chunk.css",
+    "static/js/main.2f6e61e1.chunk.js"
+  ]
+}
