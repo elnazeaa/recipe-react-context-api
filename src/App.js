@@ -6,6 +6,7 @@ import {
   Categories,
   RandomPage,
   MealDetailPage,
+  MealByCatsPage,
 } from "./pages/index";
 import "./App.css";
 
@@ -25,6 +26,9 @@ const App = (props) => {
         </Route>
         <Route exact path={`/detail/:id`}>
           <MealDetailPage />
+        </Route>
+        <Route exact path={`/category/:name`}>
+          <MealByCatsPage />
         </Route>
       </Switch>
     </BrowserRouter>

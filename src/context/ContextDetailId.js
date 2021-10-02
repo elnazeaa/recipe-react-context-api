@@ -26,8 +26,12 @@ const ContextDetailProvider = (props) => {
     fetchByMealId();
   }, [state.mealId]);
 
+  const handleFilterId = (id) => {
+    console.log(id);
+  };
+
   return (
-    <ContextDetailId.Provider value={{ ...state, handleId }}>
+    <ContextDetailId.Provider value={{ ...state, handleId, handleFilterId }}>
       {props.children}
     </ContextDetailId.Provider>
   );

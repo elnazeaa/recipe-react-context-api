@@ -13,6 +13,7 @@ const FoodAndRandContent = ({ foods }) => {
       foods[`strIngredient${i}`] + "  -  " + foods[`strMeasure${i}`]
     );
   }
+  // console.log(measures);
   // //extract Correct Measures
   let correctMeasuers = measures.filter((item) => {
     if (
@@ -20,7 +21,8 @@ const FoodAndRandContent = ({ foods }) => {
       item === "-" ||
       item === "undefined  -  undefined" ||
       item === "  -  " ||
-      item === "  -   "
+      item === "  -   " ||
+      item === "null  -  null"
     ) {
       return false;
     }
