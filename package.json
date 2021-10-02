@@ -1,6 +1,6 @@
 {
     "name": "recipe-app",
-    "homepage": "http://elnazeaa.github.io/recipe-react-context-api",
+    "homepage": "https://elnazeaa.github.io/recipe-react-context-api",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
