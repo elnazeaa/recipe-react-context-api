@@ -15,7 +15,7 @@ const App = (props) => {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/recipe-react-context-api">
           <HomePage />
         </Route>
         <Route exact path="/categories">

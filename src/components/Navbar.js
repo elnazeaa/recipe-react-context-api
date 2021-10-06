@@ -30,7 +30,7 @@ const Navbar = (props) => {
         >
           <ul className="links" ref={divHeight}>
             <li>
-              <Link to="/">home</Link>
+              <Link to="/recipe-react-context-api">home</Link>
             </li>
             <li>
               <Link to="/categories">categories</Link>

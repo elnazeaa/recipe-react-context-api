@@ -44,7 +44,7 @@ const FoodAndRandContent = ({ foods }) => {
             return <li key={index}>{item}</li>;
           })}
         </ul>
-        <Link className="home" to="/">
+        <Link className="home" to="/recipe-react-context-api">
           back home....
         </Link>
       </div>
